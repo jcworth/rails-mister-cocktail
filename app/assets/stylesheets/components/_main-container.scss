@@ -1,6 +1,10 @@
 .main-container {
   margin: 0 auto;
-  display: flex;
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
   justify-content: center;
+  // justify-content: center;
 }
 
