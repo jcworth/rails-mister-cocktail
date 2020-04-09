@@ -1,0 +1,15 @@
+<p><%= link_to "Add a Dose", new_cocktail_dose_path(@cocktail) %></p>
+
+<div class="container">
+  <div class="display-card">
+    <h2><%= @cocktail.name %></h2>
+    <% @cocktail.doses.each do |dose| %>
+    <div class="display-image" style="background-image: url(<%= image_path 'cocktail2.jpg' %>)">
+      </div>
+      <div class="display-text">
+        <p><%= dose.description %></p>
+        <p><%= dose.ingredient.name %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

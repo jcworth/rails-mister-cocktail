@@ -1,0 +1,21 @@
+<div class="title">
+<h1 style="text-align: center;"> Pick a cocktail
+</div>
+
+<div class="main-container">
+
+  <!-- Cards -->
+  <div class="card-holder">
+    <% @cocktails.each do |cocktail| %>
+      <div class="cocktail-card" style="background-image: url(<%= image_path 'cocktail2.jpg' %>)">
+        <div class="cocktail-info">
+          <%= link_to cocktail.name, cocktail, class: "cocktail-text" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+
+</div>
+
+
