@@ -1,10 +1,10 @@
 <div class="title">
-<h1>Jack's Cocktails</h1>
+  <h1>Jack's Cocktails</h1>
+  <h2><%= link_to "Mix your own cocktail", new_cocktail_path %></h2>
+  <h3>Latest:</h3>
 </div>
-
 <div class="main-container">
-
-  <% @cocktails.each do |cocktail| %>
+  <% @cocktails.first(8).each do |cocktail| %>
     <div class="card-holder">
       <div class="cocktail-card" style="background-image: url(<%= image_path 'cocktail2.jpg' %>)">
         <div class="cocktail-info">

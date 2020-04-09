@@ -5,5 +5,23 @@
 
   h1 {
     font-size: 4.5rem;
+    text-align: center;
   }
+
+  h2 {
+    text-align: center;
+    padding: 15px 0px;
+
+    a {
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  h3 {
+    margin: 0;
+  }
+
 }
